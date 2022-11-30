@@ -22,7 +22,7 @@ Learning music theory and its rules are not at the speed as it should be. Many p
 
 The logic will be coded using a user programming language like JavaScript or Java or C++ and other extensions like QT. Logic will be applied to program according to the rules of four-part writing. The traditional way of teaching these rules is not as efficient because it requires another person to be present to correct the learner. With the creation of this program will allow the student to learn faster without another person(s) present. They may receive instant feedback on what is wrong with their melody, without telling them the answer, but will tell them exactly what is wrong. Struggling students will have a better time learning four-part writing with the machine because it can help them learn quicker and more efficiently.
 
-**Research and Background:**
+# **Research and Background:**
 
 Initially, I had extensive knowledge in four-part harmony when I took music theory. I wanted to incorporate music and computer science together to create something useful for people who are studying music theory. In general, the four-part harmony melodies are composed on paper. However, there is technology that is free to the public that allows a user to create their four-part harmony using a computer. The technology that I have found that can allow users to create their own four-part harmony digitally is Muse Score. Muse Score had already included a SATB blank for the user to do their melody. At first, Muse Score did not have a feature that allowed users to validate their own work. They would have to either research the rules themselves or consult another person to help validate their work. With a creation of a plugin, a user can insert rule checking code into the Muse Score plugin area to be able to validate their work.
 
@@ -32,7 +32,7 @@ Muse Score was a familiar program to me at first because it was used to write an
 
 After figuring out how the plugin worked, it was then on to learning the coding language required for this specific project. The new language that had to be learned was QML. It is a user interface markup language. In a way, it allows designers and developers to create their own thing. For this project, QML was the right language to use and it required logic to fulfill the requirements and needed the markup aspect so that the user was able to see what the logic did.
 
-**Project Language(s), Software, and Hardware:**
+# **Project Language(s), Software, and Hardware:**
 
 Project Language: QML
 
@@ -46,7 +46,7 @@ The minimal viable product is to be able to produce a fully functional four-part
 
 Each rule is to have specific color and text markings in the staff to allow the user to identify the error that is being committed. The markings will be displayed in a linear fashion. Each note will be compared to the second note next to it. This is similar in a singly linked list fashion, where one list is compared to the one after it.
 
-**Project Implementation Description and Explanation:**
+# **Project Implementation Description and Explanation:**
 
 The four-part harmony error detection machine was developed using logic of whole and half steps. There are 12 half steps in an octave. Using this knowledge, implemented logic to trace how big each interval was in between notes.
 
@@ -62,7 +62,7 @@ For the large leaps, the program will perform a linear scan in all parts. It wil
 
 For the chordal seventh, the program will perform a linear scan in all parts. It will analyze each voice (soprano, alto, tenor, bass) separately. This test will detect a chordal seventh, which is where the leading tone of a V7 chord does not resolve down. E.g., in the key of C major, the V7 is a G chord (G, B, D, F). The F (leading tone) must resolve down (resolves to E). If it resolves up, then this test case will highlight that error. In voicing, the resolution of the seventh is the standard because if it is not resolved, it will produce dissonance or the wanting of a note to finish its final note.
 
-**Test Plan:**
+# **Test Plan:**
 
 With each prototype of the four-part harmony error detection machine, there are 4 tests. Each test will use an example of a four-part melody. In the process of testing, I will use basic intervals to test. The program should be able to detect these intervals and display the error to the screen, nothing if all correct. To ensure that the error detection is running correctly, I will analyze the harmonies by hand and consult an expert if needed.
 
@@ -84,7 +84,7 @@ _Figure 3 Input and expected output of a large leap._
 
 _Figure 4 Input and expected output of a chordal seventh._
 
-**Test Results:**
+# **Test Results:**
 
 Testing was done by using various of four part harmonies. Examples included professor examples, student examples, church hymns, etc.
 
@@ -150,7 +150,7 @@ Expected result is actual result. No other errors except chordal seventh were in
 
 _Figure 5 I V7 I chord progression._
 
-**Challenges Overcome:**
+# **Challenges Overcome:**
 
 The main challenge that I faced was a platform to execute my idea. There were many software programs out there that allowed me to compose my own harmonies, but they did not have a place for me to implement code. I then looked into the documentation of Muse Score. They had a plugin feature within their app where anyone can implement whatever they want through their app.
 
@@ -160,7 +160,7 @@ Another challenge was learning how the plugin worked in Muse Score. I researched
 
 Learning a new programming language from scratch is always difficult. I had to learn the syntax and logic behind the new programming language. In this case, I had to learn QML, which is markup language (that's why I was able to display highlighted notes). It turns out that it was a lot less coding that I thought it would be because it provided the libraries I needed to be able to execute this project successfully.
 
-**Future enhancements:**
+# **Future enhancements:**
 
 Future enhancements would include anything that is not in this version of this implementation. The parts that were not added included rules that were introduced in later periods of music. Rules that were not included were approaching the V chord with IV6, ii, ii7, and IV7, cadential 6/4, etc.
 
