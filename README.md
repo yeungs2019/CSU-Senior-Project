@@ -6,15 +6,15 @@ The four-part writing machine project is a plugin that recreates the rules of fo
 
 ## [2. Research and Background](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/docs/TestPlan.md#research-and-background)
 
-## [3. Project Language(s), Software, and Hardware](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/docs/TestPlan.md#research-and-background)
+## [3. Project Language(s), Software, and Hardware](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/docs/TestPlan.md#project-languages-software-and-hardware)
 
 ## [4. Project Implementation Description and Explanation](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/docs/TestPlan.md#project-implementation-description-and-explanation)
 
 ## [5. Test Plan](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/docs/TestPlan.md#test-plan)
 
-## [6. Test Results](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/docs/TestPlan.md#test-plan)
+## [6. Test Results](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/docs/TestPlan.md#test-results)
 
-## [7. Challenges Overcome](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/docs/TestPlan.md#test-plan)
+## [7. Challenges Overcome](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/docs/TestPlan.md#challenges-overcome)
 
 ## [8. Future Enhancements](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/docs/TestPlan.md#future-enhancements)
 
