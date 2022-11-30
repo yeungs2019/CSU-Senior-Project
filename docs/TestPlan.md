@@ -14,7 +14,7 @@ The four-part writing machine project is a plugin that recreates the rules of fo
 
 The purpose of this project is to tie both computer science knowledge as well as music theory knowledge in one project. For many music theory students that have no prior knowledge on four-part harmony, this tool will a useful asset to them.
 
-***Problem Statement:***
+#**Problem Statement:**
 
 Music students learning how to four-part write melodies easily and understanding how the rules work by using the project as a learning tool is the quickest and fastest way to learn the rules of four-part harmony. If all logic goes well in the project, students will not have an issue learning and understanding the rules of four-part running. Music theory is a difficult concept to understand, but with the creation of this project, the process of learning music theory will be more feasible.
 
