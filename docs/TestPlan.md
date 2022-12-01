@@ -68,8 +68,8 @@ With each prototype of the four-part harmony error detection machine, there are 
 
 Test 1 will be parallel octaves: If there exists a parallel octave in the example, it will be highlighted. See Fig. 1. Test 2 will be parallel fifths. If there exists a parallel fifth in the example, it will be highlighted. See Fig. 2. Test 3 will be large leaps. If there exists a large leap (interval greater than a 6), it will be highlighted. See Fig. 3. Test 4 will be a chordal seventh. If there exists a chordal seventh in the example, it will be highlighted. See Fig. 4.
 
-![](RackMultipart20221130-1-uqn25q_html_5a0b08454e3153ea.png) ![](RackMultipart20221130-1-uqn25q_html_895120331945afcd.png)
-
+[_Input_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/P8%20input.png)
+[_Output_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/P8%20output.png)
 _Figure 1 Input and expected output of parallel octave._
 
 ![](RackMultipart20221130-1-uqn25q_html_99de3b9e8273d447.png) ![](RackMultipart20221130-1-uqn25q_html_c56a2bfa43e12b65.png)
