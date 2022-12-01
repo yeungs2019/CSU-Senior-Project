@@ -103,15 +103,12 @@ Expected Result is the same as actual result
 
 In no error, the four tests shall fail because the machine failed to detect the errors, meaning that errors did not exist in the example.
 
+[_Bach_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/bach.png)<br>
 Figure from Bach: "Loct Gott, ihr Christen, Allzugleich, BMV 376, mm. 1-2, transposed.
 
-  -
-
-![](RackMultipart20221130-1-uqn25q_html_983a6572e06b5b12.png)
-
+[_Student_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/st.png)<br>
 Figure from a student.
 
-![](RackMultipart20221130-1-uqn25q_html_fda1e176741133fe.png)
 
 - Parallel octave: Passed
   - Test 1: Passed
@@ -119,7 +116,7 @@ Figure from a student.
   - Test 3: Failed
   - Test 4: Failed
 
-E ![](RackMultipart20221130-1-uqn25q_html_7351fe37b968a98f.png) ![](RackMultipart20221130-1-uqn25q_html_4dd1f9eff2eea67e.png) xpected result is actual result. No other errors except parallel octaves were included.
+Expected result is actual result. No other errors except parallel octaves were included.
 
 - Parallel fifth: Passed
   - Test 1: Failed
@@ -129,9 +126,6 @@ E ![](RackMultipart20221130-1-uqn25q_html_7351fe37b968a98f.png) ![](RackMultipar
 
 Expected result is actual result. No other errors except parallel fifths were included
 
-. ![](RackMultipart20221130-1-uqn25q_html_76412283ea84f61e.png)
-
-![](RackMultipart20221130-1-uqn25q_html_b5ffbf6a39aff4a.png)
 
 - Large Leap: Passed
   - Test 1: Failed
@@ -139,7 +133,7 @@ Expected result is actual result. No other errors except parallel fifths were in
   - Test 3: Passed
   - Test 4: Failed
 
-Expected result is actual result. No other errors except large leaps were included. ![](RackMultipart20221130-1-uqn25q_html_aab0d4a5f8ec7e5c.png) ![](RackMultipart20221130-1-uqn25q_html_2d8f3d437a31fd47.png)
+Expected result is actual result. No other errors except large leaps were included. 
 
 - Chordal seventh: Passed
   - Test 1: Failed
@@ -149,7 +143,6 @@ Expected result is actual result. No other errors except large leaps were includ
 
 Expected result is actual result. No other errors except chordal seventh were included.
 
-![](RackMultipart20221130-1-uqn25q_html_8a80ad7795f59279.png) ![](RackMultipart20221130-1-uqn25q_html_6a9ae1e9288306bd.png)
 
 _Figure 5 I V7 I chord progression._
 
