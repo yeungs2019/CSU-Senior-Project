@@ -34,7 +34,7 @@ After figuring out how the plugin worked, it was then on to learning the coding 
 
 # **Project Language(s), Software, and Hardware:**
 
-Project Language: QML
+Project Language: QML (influenced by XAML, JavaScript, JSON, QT)
 
 Project Software: Muse Score
 
