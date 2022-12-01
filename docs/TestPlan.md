@@ -72,16 +72,19 @@ Test 1 will be parallel octaves: If there exists a parallel octave in the exampl
 [_Output_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/P8%20output.png)<br>
 _Figure 1 Input and expected output of parallel octave._
 
-![](RackMultipart20221130-1-uqn25q_html_99de3b9e8273d447.png) ![](RackMultipart20221130-1-uqn25q_html_c56a2bfa43e12b65.png)
 
+[_Input_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/P5%20input.png)<br>
+[_Output_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/P5%20output.png)<br>
 _Figure 2 Input and expected output of a parallel fifth._
 
-![](RackMultipart20221130-1-uqn25q_html_dd4bff4a442269b7.png) ![](RackMultipart20221130-1-uqn25q_html_7c2af69a3c972e58.png)
 
+[_Input_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/LL%20input.png)<br>
+[_Output_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/LL%20output.png)<br>
 _Figure 3 Input and expected output of a large leap._
 
-![](RackMultipart20221130-1-uqn25q_html_8ef71994f51d262c.png) ![](RackMultipart20221130-1-uqn25q_html_9016100076b40886.png)
 
+[_Input_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/C7%20input.png)<br>
+[_Output_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/C7%20output.png)<br>
 _Figure 4 Input and expected output of a chordal seventh._
 
 # **Test Results:**
