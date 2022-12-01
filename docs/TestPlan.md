@@ -1,8 +1,8 @@
-**Student Name:** Steven Yeung
-**Advisor Name:** Dr. Sean Hayes
-**Expected Date of Graduation:** December 2022
+## **Student Name:** Steven Yeung
+## **Advisor Name:** Dr. Sean Hayes
+## **Expected Date of Graduation:** December 2022
 
-**Important Links:**
+## **Important Links:**
 
 https://github.com/yeungs2019/CSU-Senior-Project
 
@@ -148,7 +148,7 @@ Expected result is actual result. No other errors except large leaps were includ
   - Test 4: Passed
 
 [_Figure 5 I V7 I chord progression input_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/c77.png)<br>
-[_Figure 5 I V7 I chord progression output](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/c77o.png)<br>
+[_Figure 5 I V7 I chord progression output_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/c77o.png)<br>
 Expected result is actual result. No other errors except chordal seventh were included.
 
 
