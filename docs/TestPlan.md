@@ -115,7 +115,9 @@ Figure from a student.
   - Test 2: Failed
   - Test 3: Failed
   - Test 4: Failed
-
+  - 
+[_8 Input_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/P8%20input.png) <br>
+[_8 Output_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/P8%20output.png)<br>
 Expected result is actual result. No other errors except parallel octaves were included.
 
 - Parallel fifth: Passed
@@ -124,6 +126,8 @@ Expected result is actual result. No other errors except parallel octaves were i
   - Test 3: Failed
   - Test 4: Failed
 
+[_5 Input_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/P5%20input.png)<br>
+[_5 Output_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/P5%20output.png)<br>
 Expected result is actual result. No other errors except parallel fifths were included
 
 
@@ -133,6 +137,8 @@ Expected result is actual result. No other errors except parallel fifths were in
   - Test 3: Passed
   - Test 4: Failed
 
+[_Leap Input_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/LL%20input.png)<br>
+[_Leap Output_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/LL%20output.png)<br>
 Expected result is actual result. No other errors except large leaps were included. 
 
 - Chordal seventh: Passed
@@ -141,10 +147,10 @@ Expected result is actual result. No other errors except large leaps were includ
   - Test 3: Failed
   - Test 4: Passed
 
+[_Figure 5 I V7 I chord progression input_](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/c77.png)<br>
+[_Figure 5 I V7 I chord progression output](https://github.com/yeungs2019/CSU-Senior-Project/blob/master/media/c77o.png)<br>
 Expected result is actual result. No other errors except chordal seventh were included.
 
-
-_Figure 5 I V7 I chord progression._
 
 # **Challenges Overcome:**
 
