@@ -4,7 +4,7 @@ import MuseScore 3.0
 
 MuseScore {
       menuPath: "Plugins.Proof Reading.Check Harmony Rules"
-      description: "Check harmony rules.\nBased on the textbook 'First Year Harmony' by William Lovelock and aiming at providing the functionality of the plugin harmonyRules by Yvonne Cliff for MuseScore v1.x"
+      description: "Basic rules for four-part harmony. Year1"
       version: "0.1"
 
       // colors taken from harmonyRules plugin
