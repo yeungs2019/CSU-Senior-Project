@@ -28,7 +28,131 @@ MuseScore {
             visible: false;
       }
 
-function check6NextNote(note1, note2, note3, track, tick) {
+      function sgn(x) {
+            if (x > 0) return(1);
+            else if (x == 0) return(0);
+            else return(-1);
+      }
+
+      function isBetween(note1,note2,n) {
+            // test if pitch of note n is between note1 and note2
+            if (note1.pitch > note2.pitch) {
+                  if (n.pitch < note1.pitch && n.pitch > note2.pitch)
+                        return true;
+            } else {
+                  if (n.pitch < note2.pitch && n.pitch > note1.pitch)
+                        return true;
+            }
+            return false;
+      }            
+
+      function markColor(note1, note2, color) {
+            note1.color = color;
+            note2.color = color;
+      }
+
+      function markText(note1, note2, msg, color, trck, tick) {
+            markColor(note1, note2, color);
+            var myText = newElement(Element.STAFF_TEXT);
+            myText.text = msg;
+            //myText.pos.x = 0;
+            myText.offsetY = 1;
+            
+            var cursor = curScore.newCursor();
+            cursor.rewind(0);
+            cursor.track = trck;
+            while (cursor.tick < tick) {
+                  cursor.next();
+            }
+            cursor.add(myText);
+      }            
+
+      function ischord7(note1, note2) {
+      // note2 is transposing pitch
+      // note1 is concert pitch
+            var dtpc = note2.tpc - note1.tpc;
+            var dpitch = note2.pitch - note1.pitch;
+
+            
+            if (sgn(dtpc) != sgn(dpitch))
+                  return false;
+
+            dtpc = Math.abs(dtpc);
+            dpitch = Math.abs(dpitch) % 12;
+
+            // My guess work to figure out how to resolve the 7th
+            if (dtpc < 2)
+                  return false;
+            if (dtpc == 2 && dpitch == 2) 
+                  return true;
+           /* if (dtpc == 9 && dpitch == 2) 
+                  return true;
+            if (dtpc == 11 && dpitch == 5) 
+                  return true;
+            if (dtpc == 6 && dpitch == 6) 
+                  return true;
+            if (dtpc == 8 && dpitch == 8) 
+                  return true;
+            if (dtpc == 10 && dpitch == 10) 
+                  return true;
+            if (dtpc == 12 && dpitch == 16) 
+                  return true;*/
+                  
+                     // if the note in the key is part of the V7 chord in let's say g major...., do that one note
+            // g major = g(0) g#(1) a(2) a#(3) b(4) c(5) c#(6) d(7)d#(8) e(9) f(10) f#(11) g(12)
+            //                        d              d           d                     d
+            // d major = d(0) d#(1) e(2) f(3) f#(4) g(5) g#(6) a(7) a#(8) b(9) c(10) c#(11) d(12)
+            //                        a              a          a                     a
+            
+           
+            return false;
+      }
+
+      function checkDim47(note1, note2, track, tick) {
+            var dtpc = note2.tpc - note1.tpc;
+            var dpitch = note2.pitch - note1.pitch;
+
+            // diminished intervals have opposite sgn for dtpc and dpitch
+            if (sgn(dtpc) == sgn(dpitch)) {
+                  return;
+            }
+
+            dtpc = Math.abs(dtpc);
+            dpitch = Math.abs(dpitch) % 12;
+
+            if (dtpc == 8 && dpitch == 4) { // dim. Fourth
+                  markText(note1, note2, "dim. 4th, avoid for now",
+                        colorError,track,tick);
+            } else if (dtpc == 9 && dpitch == 9) { // dim. Seventh
+                  markText(note1, note2, "dim. 7th, avoid for now",
+                        colorError,track,tick);
+            }
+      }
+
+      function checkDim5(note1, note2, note3, track, tick) {
+            var dtpc = note2.tpc - note1.tpc;
+            var dpitch = note2.pitch - note1.pitch;
+
+            // diminished intervals have opposite sgn for dtpc and dpitch
+            if (sgn(dtpc) == sgn(dpitch)) {
+                  return;
+            }
+
+            dtpc = Math.abs(dtpc);
+            dpitch = Math.abs(dpitch) % 12;
+
+            if (dtpc == 6 && dpitch == 6) {
+                  // check if note3 is inbetween
+                  if (!isBetween(note1,note2,note3)) {
+                        note3.color = colorError;
+                        markText(note2,note3,
+                        "dim. 5th should be followed by\nnote within interval",
+                              colorError,track,tick);
+                  }
+            }
+      }
+
+      function check6NextNote(note1, note2, note3, track, tick) {
             var dtpc = note2.tpc - note1.tpc;
             var dpitch = note2.pitch - note1.pitch;
             var sameSgn = (sgn(dtpc) == sgn(dpitch));
@@ -52,7 +176,23 @@ function check6NextNote(note1, note2, note3, track, tick) {
                   }
             }
       }
-      
+
+      function check7AndLarger(note1, note2, track, tick, flag) {
+            var dtpc = Math.abs(note2.tpc - note1.tpc);
+            var dpitch = Math.abs(note2.pitch - note1.pitch);
+            
+            if (dpitch > 9 && dpitch != 12 && dtpc < 6) {
+                  /*if (flag) {
+                        markText(note1,note2,
+                        "No 7ths, 9ths or larger\nnor with 1 note in between",
+                        colorLargeInt,track,tick);
+                  } else {
+                        markText(note1, note2,
+                        "No 7ths, 9ths or larger",colorLargeInt,track,tick);
+                  }*/
+            }
+      }
+
       function isOctave(note1, note2) {
             var dtpc = Math.abs(note2.tpc - note1.tpc);
             var dpitch = Math.abs(note2.pitch - note1.pitch);
@@ -61,6 +201,27 @@ function check6NextNote(note1, note2, note3, track, tick) {
             else
                   return false;
       }
+      
+     
+      function check8(note1, note2, note3, track, tick) {
+            // check if note2 and note3 form an octave
+            // and note1 is not inbetween
+            if (isOctave(note2,note3) && !isBetween(note2,note3,note1)) {
+                  note3.color = colorError;
+                  markText(note1,note2,
+                        "Octave should be preceeded by note within compass",
+                        colorError,track,tick);
+            }
+            // check if note1 and note2 form an octave
+            // and note3 is not inbetween
+            if (isOctave(note1,note2) && !isBetween(note1,note2,note3)) {
+                  note3.color = colorError;
+                  markText(note1,note2,
+                        "Octave should be followed by note within compass",
+                        colorError,track,tick);
+            }
+      }           
+
       onRun: {
             console.log("start")
             if (typeof curScore == 'undefined' || curScore == null) {
@@ -153,10 +314,10 @@ function check6NextNote(note1, note2, note3, track, tick) {
                                     if ((! curRest[track]) 
                                          && curNote[track].pitch != note.pitch) {
                                           // previous note present
-                                          // check for augmented interval
-                                          if (isAugmentedInt(note, curNote[track])) {
+                                          // check for chordal 7
+                                          if (ischord7(note, curNote[track])) {
                                                 markText(curNote[track],note,
-                                                "augmented interval",colorError,
+                                                "chordal7th or doubled 7th",colorError,
                                                 track,curTick[track]);
                                           }
                                           // check for diminished 4th and 7th
@@ -279,4 +440,5 @@ function check6NextNote(note1, note2, note3, track, tick) {
                   Qt.quit();
             }
       }
-}
+      }
+      
